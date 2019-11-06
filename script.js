@@ -18,10 +18,15 @@
 
 let tl = anime.timeline({
     easing: 'easeOutExpo',
-    duration: 750
+    duration: 750,
 })
 tl.add({
     targets: 'section div',
     backgroundColor: 'rgb(197, 197, 255)',
-    
+    delay: anime.stagger(100),
+})
+tl.add({
+    targets: 'section div',
+    width: '90%',
+    backgroundColor: 'rgb(235, 235, 255)',
 })
