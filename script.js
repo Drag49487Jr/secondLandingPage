@@ -22,6 +22,7 @@ let tl = anime.timeline({
 })
 tl.add({
     targets: 'section div',
+    width: '100%',
     backgroundColor: 'rgb(197, 197, 255)',
     delay: anime.stagger(100),
 })
@@ -30,3 +31,10 @@ tl.add({
     width: '90%',
     backgroundColor: 'rgb(235, 235, 255)',
 })
+tl.add({
+    targets: 'h1',
+    top: '20%',
+    opacity: 1,
+    dureation: 4000
+})
+
