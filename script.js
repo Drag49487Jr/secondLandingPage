@@ -36,5 +36,18 @@ tl.add({
     top: '20%',
     opacity: 1,
     dureation: 4000
+}, '-=1600')
+
+let rotateMe = anime({
+    targets: 'section',
+    scaleY: '2',
+    scaleX: '2',
+    translateX: '40%',
+    rotate: '45deg',
+    duration: 5000,
+    autoplay: false
 })
 
+document.querySelector('h1').addEventListener('mouseover', () => {
+    rotateMe.play();
+})
